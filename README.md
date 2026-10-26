@@ -19,3 +19,18 @@ A pure Python command-line utility to fetch, parse, and read RSS feeds. It extra
 2. Install the required dependencies:
    ```bash
    pip install requests
+
+### Usage
+
+Run the script from the command line by passing the RSS feed URL as an argument:
+Bash
+
+`python rss_reader.py [source_url] [--limit LIMIT] [--json]`
+
+### Arguments
+
+    source: The URL of the RSS feed to fetch (e.g., https://news.yahoo.com/rss/).
+
+    --limit: (Optional) Integer. Limits the number of news items displayed. If not provided, all available items are shown.
+
+    --json: (Optional) Flag. Prints the parsed RSS feed as a structured JSON object to stdout.
